@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A focused performance dashboard for creator commerce and audience growth.">
+  <title>Signal / Creator performance</title>
+  <link rel="stylesheet" href="dist/tailwind.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css">
+</head>
+<body class="min-h-screen bg-[#f5f7f4] text-[#17231f] antialiased selection:bg-[#b7e9d3] selection:text-[#17231f]">
+  <div class="min-h-screen lg:flex">
+    <aside class="hidden w-64 shrink-0 border-r border-[#d9e3dc] bg-[#fbfcfa] lg:fixed lg:inset-y-0 lg:flex lg:flex-col">
+      <div class="flex items-center gap-3 border-b border-[#d9e3dc] px-7 py-7">
+        <span class="grid size-9 place-items-center rounded-xl bg-[#17231f] text-sm font-black text-[#b7e9d3]">S/</span>
+        <div>
+          <p class="text-sm font-bold tracking-tight">Signal</p>
+          <p class="text-[10px] font-semibold uppercase tracking-[0.2em] text-[#718079]">Creator OS</p>
+        </div>
+      </div>
+      <nav class="flex-1 px-4 py-8" aria-label="Primary navigation">
+        <p class="px-3 text-[10px] font-bold uppercase tracking-[0.2em] text-[#89968f]">Workspace</p>
+        <div class="mt-4 space-y-1">
+          <a href="#overview" class="flex items-center gap-3 rounded-xl bg-[#e6f5ed] px-3 py-3 text-sm font-bold text-[#176844]" aria-current="page">
+            <span class="grid size-7 place-items-center rounded-lg bg-[#b7e9d3] text-xs">01</span> Overview
+          </a>
+          <a href="#drivers" class="flex items-center gap-3 rounded-xl px-3 py-3 text-sm font-semibold text-[#65736b] hover:bg-[#f0f4f1] hover:text-[#17231f]">
+            <span class="grid size-7 place-items-center rounded-lg bg-[#f0f4f1] text-xs">02</span> Drivers
+          </a>
+          <a href="#operations" class="flex items-center gap-3 rounded-xl px-3 py-3 text-sm font-semibold text-[#65736b] hover:bg-[#f0f4f1] hover:text-[#17231f]">
+            <span class="grid size-7 place-items-center rounded-lg bg-[#f0f4f1] text-xs">03</span> Operations
+          </a>
+        </div>
+      </nav>
+      <div class="m-4 rounded-2xl bg-[#17231f] p-5 text-white">
+        <p class="text-[10px] font-bold uppercase tracking-[0.2em] text-[#86cfae]">Reporting period</p>
+        <p class="mt-2 text-lg font-bold">01—30 Sep 2026</p>
+        <p class="mt-1 text-xs text-[#9eaea5]">Sample performance data</p>
+      </div>
+    </aside>
+
+    <main class="min-w-0 flex-1 pb-28 lg:ml-64 lg:pb-0">
+      <header class="border-b border-[#d9e3dc] bg-[#fbfcfa] px-5 py-5 sm:px-8 lg:px-12 lg:py-8">
+        <div class="mx-auto max-w-[1440px]">
+          <div class="flex items-start justify-between gap-6">
+            <div>
+              <p class="mb-2 text-[10px] font-bold uppercase tracking-[0.24em] text-[#25835b]">Monday, 30 September 2026</p>
+              <h1 class="text-3xl font-black tracking-[-0.04em] text-[#17231f] sm:text-4xl">Good morning, Alex.</h1>
+              <p class="mt-2 max-w-xl text-sm leading-6 text-[#65736b]">Your audience is growing steadily. Here is the clearest view of what is driving revenue this month.</p>
+            </div>
+            <div class="hidden items-center gap-3 sm:flex">
+              <span class="rounded-full border border-[#d9e3dc] bg-white px-3 py-2 text-xs font-semibold text-[#65736b]">September 2026</span>
+              <span class="grid size-10 place-items-center rounded-full bg-[#f1b56b] text-sm font-black text-[#17231f]">AC</span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="mx-auto max-w-[1440px] space-y-10 px-5 py-7 sm:px-8 lg:px-12 lg:py-10">
+        <section id="overview" aria-labelledby="overview-title" class="scroll-mt-6">
+          <div class="mb-5 flex items-end justify-between gap-4">
+            <div>
+              <p class="text-[10px] font-bold uppercase tracking-[0.22em] text-[#25835b]">01 / The headline</p>
+              <h2 id="overview-title" class="mt-1 text-xl font-black tracking-[-0.03em] sm:text-2xl">Main outcome indicators</h2>
+            </div>
+            <span class="hidden rounded-full bg-[#e6f5ed] px-3 py-1.5 text-xs font-bold text-[#176844] sm:inline-flex">↑ 18.4% vs last month</span>
+          </div>
+          <div class="grid grid-cols-2 gap-3 lg:grid-cols-4">
+            <article class="col-span-2 rounded-2xl bg-[#17231f] p-5 text-white sm:p-6">
+              <div class="flex items-start justify-between gap-4">
+                <div>
+                  <p class="text-xs font-semibold text-[#9eaea5]">Commission generated</p>
+                  <p class="mt-5 text-4xl font-black tracking-[-0.05em] sm:text-5xl">€5,724.90</p>
+                </div>
+                <span class="rounded-full bg-[#b7e9d3] px-2.5 py-1 text-[10px] font-black text-[#176844]">+18.4%</span>
+              </div>
+              <div class="mt-7 flex items-end justify-between gap-4 border-t border-white/10 pt-4">
+                <p class="text-xs text-[#9eaea5]">From €38,166 gross sales</p>
+                <p class="text-xs font-bold text-[#b7e9d3]">638 conversions</p>
+              </div>
+            </article>
+            <article class="rounded-2xl border border-[#d9e3dc] bg-white p-5">
+              <p class="text-xs font-semibold text-[#718079]">Conversion rate</p>
+              <p class="mt-5 text-3xl font-black tracking-[-0.05em]">2.84%</p>
+              <p class="mt-3 text-xs font-bold text-[#25835b]">↑ 0.6 pts</p>
+            </article>
+            <article class="rounded-2xl border border-[#d9e3dc] bg-white p-5">
+              <p class="text-xs font-semibold text-[#718079]">Engagement rate</p>
+              <p class="mt-5 text-3xl font-black tracking-[-0.05em]">6.72%</p>
+              <p class="mt-3 text-xs font-bold text-[#25835b]">↑ 1.2 pts</p>
+            </article>
+            <article class="rounded-2xl border border-[#d9e3dc] bg-white p-5">
+              <p class="text-xs font-semibold text-[#718079]">Return on ad spend</p>
+              <p class="mt-5 text-3xl font-black tracking-[-0.05em]">4.08x</p>
+              <p class="mt-3 text-xs font-bold text-[#25835b]">↑ 0.31x</p>
+            </article>
+            <article class="rounded-2xl border border-[#d9e3dc] bg-white p-5">
+              <p class="text-xs font-semibold text-[#718079]">Average order value</p>
+              <p class="mt-5 text-3xl font-black tracking-[-0.05em]">€59.82</p>
+              <p class="mt-3 text-xs font-bold text-[#d97a28]">↓ 2.1%</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="drivers" aria-labelledby="drivers-title" class="scroll-mt-6">
+          <div class="mb-5">
+            <p class="text-[10px] font-bold uppercase tracking-[0.22em] text-[#25835b]">02 / The why</p>
+            <h2 id="drivers-title" class="mt-1 text-xl font-black tracking-[-0.03em] sm:text-2xl">Drivers</h2>
+            <p class="mt-1 text-sm text-[#718079]">Find the platforms, products, and moments turning attention into income.</p>
+          </div>
+          <div class="grid gap-5 xl:grid-cols-12">
+            <article class="rounded-2xl border border-[#d9e3dc] bg-white p-5 sm:p-6 xl:col-span-7">
+              <div class="flex items-start justify-between gap-5">
+                <div>
+                  <h3 class="font-bold">Conversion funnel</h3>
+                  <p class="mt-1 text-xs text-[#718079]">Where the audience becomes a customer</p>
+                </div>
+                <span class="rounded-full bg-[#f0f4f1] px-2.5 py-1 text-[10px] font-bold text-[#65736b]">30 days</span>
+              </div>
+              <ol class="mt-7 space-y-4" aria-label="Conversion funnel stages">
+                <li>
+                  <div class="mb-2 flex justify-between text-xs"><span class="font-bold">Reach</span><span class="font-bold text-[#718079]">2.24M <span class="font-normal">100%</span></span></div>
+                  <div class="h-9 overflow-hidden rounded-lg bg-[#e6f5ed]"><div class="flex h-full w-full items-center justify-end bg-[#7dd6ad] px-3 text-xs font-black text-[#176844]">2.24M</div></div>
+                </li>
+                <li>
+                  <div class="mb-2 flex justify-between text-xs"><span class="font-bold">Link clicks</span><span class="font-bold text-[#718079]">84,610 <span class="font-normal">3.78%</span></span></div>
+                  <div class="h-9 overflow-hidden rounded-lg bg-[#e6f5ed]"><div class="flex h-full w-[64%] items-center justify-end bg-[#52b889] px-3 text-xs font-black text-white">84.6K</div></div>
+                </li>
+                <li>
+                  <div class="mb-2 flex justify-between text-xs"><span class="font-bold">Product views</span><span class="font-bold text-[#718079]">22,430 <span class="font-normal">26.5%</span></span></div>
+                  <div class="h-9 overflow-hidden rounded-lg bg-[#e6f5ed]"><div class="flex h-full w-[42%] items-center justify-end bg-[#25835b] px-3 text-xs font-black text-white">22.4K</div></div>
+                </li>
+                <li>
+                  <div class="mb-2 flex justify-between text-xs"><span class="font-bold">Conversions</span><span class="font-bold text-[#718079]">638 <span class="font-normal">2.84%</span></span></div>
+                  <div class="h-9 overflow-hidden rounded-lg bg-[#e6f5ed]"><div class="flex h-full w-[24%] items-center justify-end bg-[#176844] px-3 text-xs font-black text-white">638</div></div>
+                </li>
+              </ol>
+            </article>
+            <article class="rounded-2xl border border-[#d9e3dc] bg-white p-5 sm:p-6 xl:col-span-5">
+              <div>
+                <h3 class="font-bold">Commission by platform</h3>
+                <p class="mt-1 text-xs text-[#718079]">Instagram leads the month</p>
+              </div>
+              <figure class="mt-6">
+                <table class="charts-css bar show-labels show-data-axes data-spacing-4" aria-label="Commission by platform">
+                  <caption class="sr-only">Commission generated by platform in euros</caption>
+                  <tbody>
+                    <tr><th scope="row">Instagram</th><td style="--size: 0.82"><span class="data">€2,940</span></td></tr>
+                    <tr><th scope="row">YouTube</th><td style="--size: 0.61"><span class="data">€1,860</span></td></tr>
+                    <tr><th scope="row">TikTok</th><td style="--size: 0.31"><span class="data">€925</span></td></tr>
+                  </tbody>
+                </table>
+              </figure>
+            </article>
+            <article class="rounded-2xl border border-[#d9e3dc] bg-white p-5 sm:p-6 xl:col-span-5">
+              <div>
+                <h3 class="font-bold">Revenue by product</h3>
+                <p class="mt-1 text-xs text-[#718079]">Product B is your strongest earner</p>
+              </div>
+              <figure class="mt-6">
+                <table class="charts-css bar show-labels show-data-axes data-spacing-4" aria-label="Revenue by product">
+                  <caption class="sr-only">Gross revenue generated by product in euros</caption>
+                  <tbody>
+                    <tr><th scope="row">Product B</th><td style="--size: 0.93"><span class="data">€17,280</span></td></tr>
+                    <tr><th scope="row">Product C</th><td style="--size: 0.68"><span class="data">€11,680</span></td></tr>
+                    <tr><th scope="row">Product A</th><td style="--size: 0.53"><span class="data">€9,206</span></td></tr>
+                  </tbody>
+                </table>
+              </figure>
+            </article>
+            <article class="rounded-2xl border border-[#d9e3dc] bg-white p-5 sm:p-6 xl:col-span-7">
+              <div class="flex items-start justify-between gap-5">
+                <div>
+                  <h3 class="font-bold">Engagement by platform</h3>
+                  <p class="mt-1 text-xs text-[#718079]">Engagement = interactions / reach</p>
+                </div>
+                <span class="text-xs font-bold text-[#25835b]">Target 5%</span>
+              </div>
+              <figure class="mt-6">
+                <table class="charts-css column show-labels show-data-axes data-spacing-5" aria-label="Engagement rate by platform">
+                  <caption class="sr-only">Engagement rate by social platform</caption>
+                  <tbody>
+                    <tr><th scope="row">YouTube</th><td style="--size: 0.78"><span class="data">7.8%</span></td><td style="--size: 0.63"><span class="data">6.3%</span></td><td style="--size: 0.71"><span class="data">7.1%</span></td></tr>
+                  </tbody>
+                </table>
+              </figure>
+              <div class="mt-4 grid grid-cols-3 gap-3 border-t border-[#edf1ee] pt-4 text-center text-[10px] font-bold text-[#718079]"><span class="text-[#db5b53]">Instagram<br><strong class="text-sm text-[#17231f]">7.8%</strong></span><span class="text-[#e3a022]">YouTube<br><strong class="text-sm text-[#17231f]">6.3%</strong></span><span class="text-[#25835b]">TikTok<br><strong class="text-sm text-[#17231f]">7.1%</strong></span></div>
+            </article>
+          </div>
+        </section>
+
+        <section id="operations" aria-labelledby="operations-title" class="scroll-mt-6">
+          <div class="mb-5">
+            <p class="text-[10px] font-bold uppercase tracking-[0.22em] text-[#25835b]">03 / The detail</p>
+            <h2 id="operations-title" class="mt-1 text-xl font-black tracking-[-0.03em] sm:text-2xl">Operational details</h2>
+            <p class="mt-1 text-sm text-[#718079]">The practical view for deciding what to promote next.</p>
+          </div>
+          <div class="grid gap-5 xl:grid-cols-2">
+            <article class="overflow-hidden rounded-2xl border border-[#d9e3dc] bg-white">
+              <div class="flex items-center justify-between border-b border-[#edf1ee] px-5 py-5"><div><h3 class="font-bold">Products</h3><p class="mt-1 text-xs text-[#718079]">Commission performance</p></div><span class="rounded-full bg-[#e6f5ed] px-2.5 py-1 text-[10px] font-bold text-[#176844]">3 active</span></div>
+              <div class="overflow-x-auto"><table class="w-full min-w-[520px] text-left text-xs"><caption class="sr-only">Product prices, sales, revenue and commission</caption><thead class="bg-[#fbfcfa] text-[10px] uppercase tracking-wider text-[#89968f]"><tr><th class="px-5 py-3 font-bold">Product</th><th class="px-3 py-3 font-bold">Price</th><th class="px-3 py-3 font-bold">Sales</th><th class="px-3 py-3 font-bold">Revenue</th><th class="px-5 py-3 text-right font-bold">Commission</th></tr></thead><tbody class="divide-y divide-[#edf1ee]"><tr><th class="px-5 py-4 font-bold">Product B <span class="ml-1 rounded bg-[#fff1dc] px-1.5 py-0.5 text-[9px] text-[#a95b12]">TOP</span></th><td class="px-3 py-4 text-[#65736b]">€120</td><td class="px-3 py-4 font-semibold">144</td><td class="px-3 py-4 text-[#65736b]">€17,280</td><td class="px-5 py-4 text-right font-bold text-[#176844]">€2,592</td></tr><tr><th class="px-5 py-4 font-bold">Product C</th><td class="px-3 py-4 text-[#65736b]">€80</td><td class="px-3 py-4 font-semibold">146</td><td class="px-3 py-4 text-[#65736b]">€11,680</td><td class="px-5 py-4 text-right font-bold text-[#176844]">€1,752</td></tr><tr><th class="px-5 py-4 font-bold">Product A</th><td class="px-3 py-4 text-[#65736b]">€50</td><td class="px-3 py-4 font-semibold">184</td><td class="px-3 py-4 text-[#65736b]">€9,206</td><td class="px-5 py-4 text-right font-bold text-[#176844]">€1,380.90</td></tr></tbody></table></div>
+            </article>
+            <article class="overflow-hidden rounded-2xl border border-[#d9e3dc] bg-white">
+              <div class="flex items-center justify-between border-b border-[#edf1ee] px-5 py-5"><div><h3 class="font-bold">Platforms</h3><p class="mt-1 text-xs text-[#718079]">Reach, cost, and return</p></div><span class="rounded-full bg-[#e6f5ed] px-2.5 py-1 text-[10px] font-bold text-[#176844]">3 connected</span></div>
+              <div class="overflow-x-auto"><table class="w-full min-w-[520px] text-left text-xs"><caption class="sr-only">Platform reach, conversion, spend and return on ad spend</caption><thead class="bg-[#fbfcfa] text-[10px] uppercase tracking-wider text-[#89968f]"><tr><th class="px-5 py-3 font-bold">Platform</th><th class="px-3 py-3 font-bold">Reach</th><th class="px-3 py-3 font-bold">Conv.</th><th class="px-3 py-3 font-bold">Spend</th><th class="px-5 py-3 text-right font-bold">ROAS</th></tr></thead><tbody class="divide-y divide-[#edf1ee]"><tr><th class="px-5 py-4 font-bold"><span class="mr-2 inline-block size-2 rounded-full bg-[#db5b53]"></span>Instagram</th><td class="px-3 py-4 text-[#65736b]">924K</td><td class="px-3 py-4 font-semibold">324</td><td class="px-3 py-4 text-[#65736b]">€720</td><td class="px-5 py-4 text-right font-bold text-[#176844]">4.08x</td></tr><tr><th class="px-5 py-4 font-bold"><span class="mr-2 inline-block size-2 rounded-full bg-[#e3a022]"></span>YouTube</th><td class="px-3 py-4 text-[#65736b]">786K</td><td class="px-3 py-4 font-semibold">198</td><td class="px-3 py-4 text-[#65736b]">€590</td><td class="px-5 py-4 text-right font-bold text-[#176844]">3.15x</td></tr><tr><th class="px-5 py-4 font-bold"><span class="mr-2 inline-block size-2 rounded-full bg-[#25835b]"></span>TikTok</th><td class="px-3 py-4 text-[#65736b]">530K</td><td class="px-3 py-4 font-semibold">116</td><td class="px-3 py-4 text-[#65736b]">€405</td><td class="px-5 py-4 text-right font-bold text-[#176844]">2.28x</td></tr></tbody></table></div>
+            </article>
+          </div>
+          <div class="mt-5 grid gap-5 lg:grid-cols-3">
+            <article class="rounded-2xl border border-[#d9e3dc] bg-white p-5"><div class="flex items-center justify-between"><h3 class="font-bold">Top products</h3><span class="text-xs font-bold text-[#25835b]">By commission</span></div><ol class="mt-5 space-y-4"><li class="flex items-center gap-3"><span class="grid size-7 place-items-center rounded-lg bg-[#17231f] text-xs font-black text-white">1</span><span class="flex-1 text-sm font-semibold">Product B</span><strong class="text-sm">€2,592</strong></li><li class="flex items-center gap-3"><span class="grid size-7 place-items-center rounded-lg bg-[#f0f4f1] text-xs font-black">2</span><span class="flex-1 text-sm font-semibold">Product C</span><strong class="text-sm">€1,752</strong></li><li class="flex items-center gap-3"><span class="grid size-7 place-items-center rounded-lg bg-[#f0f4f1] text-xs font-black">3</span><span class="flex-1 text-sm font-semibold">Product A</span><strong class="text-sm">€1,380.90</strong></li></ol></article>
+            <article class="rounded-2xl border border-[#d9e3dc] bg-white p-5"><div class="flex items-center justify-between"><h3 class="font-bold">Alerts</h3><span class="rounded-full bg-[#fff1dc] px-2 py-1 text-[10px] font-bold text-[#a95b12]">2 to review</span></div><ul class="mt-5 space-y-4"><li class="flex gap-3"><span class="mt-1 size-2 shrink-0 rounded-full bg-[#e3a022]"></span><p class="text-xs leading-5 text-[#65736b]"><strong class="text-[#17231f]">TikTok ROAS softened</strong><br>Down 0.42x over the last 7 days.</p></li><li class="flex gap-3"><span class="mt-1 size-2 shrink-0 rounded-full bg-[#db5b53]"></span><p class="text-xs leading-5 text-[#65736b]"><strong class="text-[#17231f]">Product A needs attention</strong><br>Conversion is below the 2% target.</p></li></ul></article>
+            <article class="rounded-2xl border border-[#d9e3dc] bg-[#e6f5ed] p-5"><p class="text-[10px] font-bold uppercase tracking-[0.2em] text-[#176844]">Next best move</p><h3 class="mt-3 text-xl font-black tracking-[-0.03em]">Put more behind Product B on Instagram.</h3><p class="mt-2 text-xs leading-5 text-[#4e7160]">It combines your highest order value with the strongest platform return.</p><a href="#overview" class="mt-5 inline-flex rounded-lg bg-[#17231f] px-3 py-2 text-xs font-bold text-white">Review overview <span class="ml-2">→</span></a></article>
+          </div>
+        </section>
+      </div>
+      <footer class="border-t border-[#d9e3dc] px-5 py-6 text-center text-xs text-[#89968f] sm:px-8 lg:px-12">Signal / Creator performance dashboard · Sample data for September 2026</footer>
+    </main>
+
+    <nav class="fixed inset-x-0 bottom-0 z-10 border-t border-[#d9e3dc] bg-[#fbfcfa]/95 px-4 pb-5 pt-3 backdrop-blur lg:hidden" aria-label="Mobile navigation">
+      <div class="mx-auto flex max-w-md items-center justify-around">
+        <a href="#overview" class="flex flex-col items-center gap-1 text-[#176844]" aria-current="page"><span class="text-base font-black">01</span><span class="text-[10px] font-bold">Overview</span></a>
+        <a href="#drivers" class="flex flex-col items-center gap-1 text-[#718079]"><span class="text-base font-black">02</span><span class="text-[10px] font-bold">Drivers</span></a>
+        <a href="#operations" class="flex flex-col items-center gap-1 text-[#718079]"><span class="text-base font-black">03</span><span class="text-[10px] font-bold">Operations</span></a>
+      </div>
+    </nav>
+  </div>
+</body>
+</html>
